@@ -16,5 +16,5 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/soma/{num1}/{num2}', [HomeController::class, 'soma']);
-
-Route::get('/soma/{num1}/{num2}', [HomeController::class, 'sub']);
+Route::get('/sub/{num1}/{num2}', [HomeController::class, 'sub']);
+Route::get('/div/{num1}/{num2}', [HomeController::class, 'div']);
