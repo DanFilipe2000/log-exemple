@@ -52,11 +52,12 @@ class HomeController extends Controller
 
         if ($num2 == 0) {
             logger()->error('Divisor zero!');
+            abort(404);
+        } else {
+            logger()->info('Div feita');
+
+            return $div;
         }
-
-        logger()->info('Div feita');
-
-        return $div;
     }
 
     public function mult($num1, $num2) {
